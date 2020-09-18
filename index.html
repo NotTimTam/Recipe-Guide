@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="author" content="Tim Phillips">
     <meta name="description" content="The greates hummus recipe in the world!">
@@ -13,8 +14,127 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <style>
+        h1{
+            color: #30323D;
+            text-align: center;
+        }
+        h2{
+            color: #4d5061;
+            text-align: center;
+            font-size: 28px;
+        }
+        aside{
+            border-style: groove;
+            border-color: aqua;
+            text-align: center;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+            border-style: groove;
+            border-color: aqua;
+            text-align: center;
+            align-items: center;
+            margin: auto;
+        }
+        img{
+            width: 125px;
+            height: 100px;
+            vertical-align: auto;
+            padding-right: 15px
+        }
+        ol{
+            color: green;
+        }
+        .link-list:hover{
+            animation: move 0.5s;
+            font-size: 105%;
+            font-weight: bold;
+        }
+        ul{
+            color: green;
+        }
+
+        @keyframes move {
+            0% { transform: translate(2px, 0.5px) rotate(0deg); }
+        }
+
+        .important {
+            color: #db4146;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .important:hover {
+            animation: shake 0.5s;
+
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+    </style>
+
 </head>
-<body>
-    
+<body style="font-family: Arial, Helvetica, sans-serif;">
+
+    <h1>Quick Hummus Recipe</h1>
+
+    <div class="grid-container">
+        <img src="hummus.jpg" alt="image failed to load! :(">
+        <p>This recipe makes quick, tasty hummus, with no messing. It has been adapted from a number of different recipes that I have read over the years.
+        <br><br>
+        Hummus is a delicious thick paste used heavily in Greek and Middle Eastern dishes. It is very tasty with salad, grilled meats and pitta breads.</p>
+    </div>
+
+    <article>
+        <h2>Ingredients</h2>
+
+        <ul> 
+            <li class="link-list"><span style="color:black;"><a href="https://products.wholefoodsmarket.com/product/goya-foods-organic-chick-peas-40bf96" title="Buy on Whole Foods">1 can (400g) of chick peas (garbanzo beans)</a></span></li>
+            <li class="link-list"><span style="color:black;"><a href="https://products.wholefoodsmarket.com/product/kevala-organic-sesame-tahini-b6b4f2" title="Buy on Whole Foods">175g of tahini</a></span></li>
+            <li class="link-list"><span style="color:black;"><a href="https://products.wholefoodsmarket.com/product/365-everyday-value-sundried-tomatoes-in-extra-virgin-olive-oil-be00ff" title="Buy on Whole Foods">6 sundried tomatoes</a></span></li>
+            <li class="link-list"><span style="color:black;"><a href="https://products.wholefoodsmarket.com/product/organic-red-bell-pepper-b44cd5" title="Buy on Whole Foods">Half a red pepper</a></span></li>
+            <li class="link-list"><span style="color:black;"><a href="https://products.wholefoodsmarket.com/product/frontier-co-op-cayenne-83d869" title="Buy on Whole Foods">A pinch of cayenne pepper</a></span></li>
+            <li class="link-list"><span style="color:black;"><a href="https://products.wholefoodsmarket.com/product/divina-roasted-garlic-cloves-ee5878" title="Buy on Whole Foods">1 clove of garlic</a></span></li>
+            <li class="link-list"><span style="color:black;"><a href="https://products.wholefoodsmarket.com/product/california-olive-ranch-arbosana-olive-oil-0d38ea" title="Buy on Whole Foods">A dash of olive oil</a></span></li>
+        </ul>
+
+        <h2>Instructions</h2>
+
+        <ol>
+            <li><span style="color:black;">Remove the skin from the garlic, and chop coarsely</span></li>
+            <li><span style="color:black;">Remove all the seeds and stalk from the pepper, and chop coarsely</span></li>
+            <li><span style="color:black;">Add all the ingredients into a food processor</span></li>
+            <li><span style="color:black;">Process all the ingredients into a paste</span></li>
+            <li><span style="color:black;">If you want a coarse "chunky" hummus, process it for a short time</span></li>
+            <li><span style="color:black;">If you want a smooth hummus, process it for a longer time</span></li>
+        </ol>
+
+        <p>For a different flavour, you could try blending in a small measure of lemon and coriander, chili pepper, lime and chipotle, harissa and mint, or spinach and feta cheese. Experiment and see what works for you.</p>
+
+        <h2>Storage</h2>
+
+        <p>
+        Refrigerate the finished hummus in a sealed container. You should be able to use it for about a week after you've made it. <br><br><div class="important">If it starts to become fizzy, you should definitely discard it.</div>
+        <br><br>
+        Hummus is suitable for freezing; you should thaw it and <em>use it within a couple of months.</em>
+        </p>
+    </article>
+
 </body>
 </html>
